@@ -1,0 +1,43 @@
+<link rel="stylesheet" href="http://bootswatch.com/spacelab/bootstrap.min.css">
+<h4 class ="hcenter well container"> User Details </h4>
+<ul class ="hcenter well container" style="list-style: none" ng-show="!vm.isEditing">
+
+
+  <li> id: {{vm.user._id}} </li>
+  <li> School: {{vm.user.school}}</li>
+  <li> Sat Old: {{vm.user.satOld}}</li>
+  <li> Sat New {{vm.user.satNew}}</li>
+  <li> Sat Two: {{vm.user.satTwo}}</li>
+  <li> Act: {{vm.user.act}}</li>
+  <li> Admit Rate: {{vm.user.scoreSum}}%</li>
+</ul>
+<form class=" well container" ng-show="vm.isEditing" ng-submit="vm.update()">
+  <label> id: </label>
+  <input class="form-control" ng-model="vm.updateUser._id">
+  <br>
+  <label> School: </label>
+  <input class="form-control" ng-model="vm.updateUser.school">
+  <br>
+  <label> Sat Old: </label>
+  <input class="form-control" ng-model="vm.updateUser.satOld">
+  <br>
+  <label> Sat New: </label>
+  <input class="form-control" ng-model="vm.updateUser.satNew">
+  <br>
+  <label> Sat Two: </label>
+  <input class="form-control" ng-model="vm.updateUser.satTwo">
+  <br>
+  <label> Act: </label>
+  <input class="form-control" ng-model="vm.updateUser.act">
+  <br>
+  <label> Admit Rate: </label>
+  <input class="form-control" ng-model="vm.updateUser.scoreSum">
+  <br>
+  <button class=" btn btn-danger" type="button" ng-click="vm.isEditing = false;" style="margin-right: 5px"> Go Back </button>
+  <button class="btn btn-success"> Submit </button>
+  </form>
+
+  <div class="hcenter well container" ng-show="!vm.isEditing">
+  <button class="btn btn-info" ng-click="vm.startEditing()"> Edit </button>
+  <button class="btn btn-success" ui-sref="admin main()"> Go back </button>
+</div>

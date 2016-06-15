@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html ng-app="app">
+
+<head>
+    <meta charset="utf-8">
+    <title>app</title>
+    <base href="/" />
+    <link rel="stylesheet" href="/client/shared/shared.css">
+</head>
+
+<body>
+
+    <div ui-view="" id="content"> </div>
+
+
+    <script src="bower_components/angular/angular.min.js"></script>
+    <script src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+    <script src="bower_components/angular-resource/angular-resource.min.js"></script>
+    <script src="bower_components/angular-google-chart/ng-google-chart.min.js"></script>
+
+    <!--Modules-->
+    <script src="client/shared/module.js"></script>
+    <script src="client/app/user/user.module.js"></script>
+    <script src="client/app/admin/admin.module.js"></script>
+    <script src="client/shared/authInterceptor.js"></script>
+
+
+    <!--Services-->
+
+    <script src="client/app/user/user.service.js"></script>
+    <script src="client/app/admin/admin.service.js"></script>
+
+
+    <!--Controllers-->
+
+    <script src="client/app/user/main/user.main.controller.js"></script>
+    <script src="client/app/user/details/details.controller.js"></script>
+    <script src="client/app/admin/register/register.controller.js"></script>
+    <script src="client/app/admin/main/admin.main.controller.js"></script>
+    <script src="client/app/admin/login/login.controller.js"></script>
+    <script src="client/app/admin/details/admin.details.controller.js"></script>
+
+
+</body>
+
+</html>

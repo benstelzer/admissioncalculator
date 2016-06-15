@@ -1,0 +1,46 @@
+<link rel="stylesheet" href="http://bootswatch.com/spacelab/bootstrap.min.css">
+<div class="well" style="min-height: 60px;" ng-init="vm.dataPopulate1(); vm.dataPopulate2()">
+  <div style="text-align:right">
+  <button class="btn btn-danger" ui-sref="login()" ng-click="vm.logout()"> Logout </button>
+  </div>
+  </div>
+<div google-chart chart="vm.myChartObject" style="height:600px; width:100%;"></div>
+<br>
+<div class="container">
+
+
+            <table class="table table-bordered table table-striped">
+                <thead>
+                    <tr>
+                        <td>_id</td>
+                        <td>school</td>
+                        <td>satOld</td>
+                        <td>satNew</td>
+                        <td>satTwo</td>
+                        <td>act</td>
+                        <td>rank</td>
+                        <td>gpa</td>
+                        <td>Admit Rate</td>
+                        <td>Buttons</td>
+
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr ng-repeat="p in vm.users">
+                        <td> {{p._id}} </a> </td>
+                        <td> {{p.school}} </td>
+                        <td> {{p.satOld}} </td>
+                        <td> {{p.satNew}} </td>
+                        <td> {{p.satTwo}} </td>
+                        <td> {{p.act}} </td>
+                        <td> {{p.rank}} </td>
+                        <td> {{p.gpa}} </td>
+                        <td>{{p.scoreSum}}%</td>
+                        <td>
+                            <button class="btn btn-danger" ng-click="vm.remove(p)"> Delete</button>
+                            <button class="btn btn-info" ui-sref="admin details({ id: p._id })"> Edit </button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>

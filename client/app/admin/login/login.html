@@ -1,0 +1,12 @@
+<link rel="stylesheet" href="/client/app/admin/login/login.css">
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Sofia' rel='stylesheet' type='text/css'>
+    <form ng-submit="vm.login()">
+    <div class='login'>
+      <h2>Log In</h2>
+      <input name='email' placeholder='E-Mail Address' type='text' ng-model="vm.admin.email", required>
+      <input id='pw' name='password' placeholder='Password' type='password' ng-model="vm.admin.password", required>
+      <input class='animated' type='submit' value='Sign in'>
+      <a class='forgot' ui-sref="register()">Need an account?</a>
+    </div>
+  </form>

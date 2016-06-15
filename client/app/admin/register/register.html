@@ -1,0 +1,18 @@
+
+<link rel="stylesheet" href="/client/app/admin/register/register.css">
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Sofia' rel='stylesheet' type='text/css'>
+    <form ng-submit="vm.register()">
+    <div class='login'>
+      <h2>Register</h2>
+      <input name='username' placeholder='Username' type='text' ng-model="vm.admin.username", required>
+      <input id='pw' name='password' placeholder='Password' type='password' ng-model="vm.admin.password", required>
+      <input name='email' placeholder='E-Mail Address' type='text' ng-model="vm.admin.email", required>
+      <div class='agree'>
+        <input id='agree' name='agree' type='checkbox', required>
+        <label for='agree'></label>Accept rules and conditions
+      </div>
+      <input class='animated' type='submit' value='Register'>
+      <a class='forgot' ui-sref="login()">Already have an account?</a>
+    </div>
+  </form>

@@ -1,0 +1,692 @@
+<link rel="stylesheet" href="http://bootswatch.com/spacelab/bootstrap.min.css">
+<link rel="stylesheet" href="/client/app/user/main/user.main.css">
+<div class="well" style="min-height: 60px;">
+  </div>
+  <br>
+
+
+<form class="well container widthy" ng-submit="vm.create()">
+   <div id="responsive-form" class="clearfix">
+     <div class="hcenter"> School:
+       <select class="form-control" name="school" id="school" ng-model="vm.user.school" required>
+         <option>--Select--</option>
+         <option>Stanford</option>
+         <option>Harvard</option>
+         <option>Yale</option>
+       </select>
+
+     </div>
+
+    <div class="form-row">
+    <div class="column-half">SAT I (Old)<select class="form-control" name="satOld" id="satOld" ng-model="vm.user.satOld" required>
+      <option>--Select--</option>
+      <option>2400</option>
+      <option>2390</option>
+      <option>2380</option>
+      <option>2370</option>
+      <option>2360</option>
+      <option>2350</option>
+      <option>2340</option>
+      <option>2330</option>
+      <option>2320</option>
+      <option>2310</option>
+      <option>2300</option>
+      <option>2290</option>
+      <option>2280</option>
+      <option>2270</option>
+      <option>2260</option>
+      <option>2250</option>
+      <option>2240</option>
+      <option>2230</option>
+      <option>2220</option>
+      <option>2210</option>
+      <option>2200</option>
+      <option>2190</option>
+      <option>2180</option>
+      <option>2170</option>
+      <option>2160</option>
+      <option>2150</option>
+      <option>2140</option>
+      <option>2130</option>
+      <option>2120</option>
+      <option>2110</option>
+      <option>2100</option>
+      <option>2090</option>
+      <option>2080</option>
+      <option>2070</option>
+      <option>2060</option>
+      <option>2050</option>
+      <option>2040</option>
+      <option>2030</option>
+      <option>2020</option>
+      <option>2010</option>
+      <option>2000</option>
+      <option>1990</option>
+      <option>1980</option>
+      <option>1970</option>
+      <option>1960</option>
+      <option>1950</option>
+      <option>1940</option>
+      <option>1930</option>
+      <option>1920</option>
+      <option>1910</option>
+      <option>1900</option>
+      <option>1890</option>
+      <option>1880</option>
+      <option>1870</option>
+      <option>1860</option>
+      <option>1850</option>
+      <option>1840</option>
+      <option>1830</option>
+      <option>1820</option>
+      <option>1810</option>
+      <option>1800</option>
+      <option>1790</option>
+      <option>1780</option>
+      <option>1770</option>
+      <option>1760</option>
+      <option>1750</option>
+      <option>1740</option>
+      <option>1730</option>
+      <option>1720</option>
+      <option>1710</option>
+      <option>1700</option>
+      <option>1690</option>
+      <option>1680</option>
+      <option>1670</option>
+      <option>1660</option>
+      <option>1650</option>
+      <option>1640</option>
+      <option>1630</option>
+      <option>1620</option>
+      <option>1610</option>
+      <option>1600</option>
+      <option>1590</option>
+      <option>1580</option>
+      <option>1570</option>
+      <option>1560</option>
+      <option>1550</option>
+      <option>1540</option>
+      <option>1530</option>
+      <option>1520</option>
+      <option>1510</option>
+      <option>1500</option>
+      <option>1490</option>
+      <option>1480</option>
+      <option>1470</option>
+      <option>1460</option>
+      <option>1450</option>
+      <option>1440</option>
+      <option>1430</option>
+      <option>1420</option>
+      <option>1410</option>
+      <option>1400</option>
+      <option>1390</option>
+      <option>1380</option>
+      <option>1370</option>
+      <option>1360</option>
+      <option>1350</option>
+      <option>1340</option>
+      <option>1330</option>
+      <option>1320</option>
+      <option>1310</option>
+      <option>1300</option>
+      <option>1290</option>
+      <option>1280</option>
+      <option>1270</option>
+      <option>1260</option>
+      <option>1250</option>
+      <option>1240</option>
+      <option>1230</option>
+      <option>1220</option>
+      <option>1210</option>
+      <option>1200</option>
+      <option>1190</option>
+      <option>1180</option>
+      <option>1170</option>
+      <option>1160</option>
+      <option>1150</option>
+      <option>1140</option>
+      <option>1130</option>
+      <option>1120</option>
+      <option>1110</option>
+      <option>1100</option>
+      <option>1090</option>
+      <option>1080</option>
+      <option>1070</option>
+      <option>1060</option>
+      <option>1050</option>
+      <option>1040</option>
+      <option>1030</option>
+      <option>1020</option>
+      <option>1010</option>
+      <option>1000</option>
+      <option>990</option>
+      <option>980</option>
+      <option>970</option>
+      <option>960</option>
+      <option>950</option>
+      <option>940</option>
+      <option>930</option>
+      <option>920</option>
+      <option>910</option>
+      <option>900</option>
+      <option>890</option>
+      <option>880</option>
+      <option>870</option>
+      <option>860</option>
+      <option>850</option>
+      <option>840</option>
+      <option>830</option>
+      <option>820</option>
+      <option>810</option>
+      <option>800</option>
+      <option>790</option>
+      <option>780</option>
+      <option>770</option>
+      <option>760</option>
+      <option>750</option>
+      <option>740</option>
+      <option>730</option>
+      <option>720</option>
+      <option>710</option>
+      <option>700</option>
+      <option>690</option>
+      <option>680</option>
+      <option>670</option>
+      <option>660</option>
+      <option>650</option>
+      <option>640</option>
+      <option>630</option>
+      <option>620</option>
+      <option>610</option>
+      <option>600</option>
+    </select> </div>
+    <div class="column-half">SAT I (New)<select class="form-control" name="satNew" id="satNew" ng-model="vm.user.satNew", required >
+      <option>--Select--</option>
+      <option>1600</option>
+      <option>1590</option>
+      <option>1580</option>
+      <option>1570</option>
+      <option>1560</option>
+      <option>1550</option>
+      <option>1540</option>
+      <option>1530</option>
+      <option>1520</option>
+      <option>1510</option>
+      <option>1500</option>
+      <option>1490</option>
+      <option>1480</option>
+      <option>1470</option>
+      <option>1460</option>
+      <option>1450</option>
+      <option>1440</option>
+      <option>1430</option>
+      <option>1420</option>
+      <option>1410</option>
+      <option>1400</option>
+      <option>1390</option>
+      <option>1380</option>
+      <option>1370</option>
+      <option>1360</option>
+      <option>1350</option>
+      <option>1340</option>
+      <option>1330</option>
+      <option>1320</option>
+      <option>1310</option>
+      <option>1300</option>
+      <option>1290</option>
+      <option>1280</option>
+      <option>1270</option>
+      <option>1260</option>
+      <option>1250</option>
+      <option>1240</option>
+      <option>1230</option>
+      <option>1220</option>
+      <option>1210</option>
+      <option>1200</option>
+      <option>1190</option>
+      <option>1180</option>
+      <option>1170</option>
+      <option>1160</option>
+      <option>1150</option>
+      <option>1140</option>
+      <option>1130</option>
+      <option>1120</option>
+      <option>1110</option>
+      <option>1100</option>
+      <option>1090</option>
+      <option>1080</option>
+      <option>1070</option>
+      <option>1060</option>
+      <option>1050</option>
+      <option>1040</option>
+      <option>1030</option>
+      <option>1020</option>
+      <option>1010</option>
+      <option>1000</option>
+      <option>990</option>
+      <option>980</option>
+      <option>970</option>
+      <option>960</option>
+      <option>950</option>
+      <option>940</option>
+      <option>930</option>
+      <option>920</option>
+      <option>910</option>
+      <option>900</option>
+      <option>890</option>
+      <option>880</option>
+      <option>870</option>
+      <option>860</option>
+      <option>850</option>
+      <option>840</option>
+      <option>830</option>
+      <option>820</option>
+      <option>810</option>
+      <option>800</option>
+      <option>790</option>
+      <option>780</option>
+      <option>770</option>
+      <option>760</option>
+      <option>750</option>
+      <option>740</option>
+      <option>730</option>
+      <option>720</option>
+      <option>710</option>
+      <option>700</option>
+      <option>690</option>
+      <option>680</option>
+      <option>670</option>
+      <option>660</option>
+      <option>650</option>
+      <option>640</option>
+      <option>630</option>
+      <option>620</option>
+      <option>610</option>
+      <option>600</option>
+      <option>590</option>
+      <option>580</option>
+      <option>570</option>
+      <option>560</option>
+      <option>550</option>
+      <option>540</option>
+      <option>530</option>
+      <option>520</option>
+      <option>510</option>
+      <option>500</option>
+      <option>490</option>
+      <option>480</option>
+      <option>470</option>
+      <option>460</option>
+      <option>450</option>
+      <option>440</option>
+      <option>430</option>
+      <option>420</option>
+      <option>410</option>
+      <option>400</option>
+    </select></div>
+    </div>
+
+    <div class="form-row">
+    <div class="column-half">ACT Composite<select class="form-control" name="act" id="act" ng-model="vm.user.act", required>
+      <option>--Select--</option>
+      <option>36</option>
+      <option>35</option>
+      <option>34</option>
+      <option>33</option>
+      <option>32</option>
+      <option>31</option>
+      <option>30</option>
+      <option>29</option>
+      <option>28</option>
+      <option>27</option>
+      <option>26</option>
+      <option>25</option>
+      <option>24</option>
+      <option>23</option>
+      <option>22</option>
+      <option>21</option>
+      <option>20</option>
+      <option>19</option>
+      <option>18</option>
+      <option>17</option>
+      <option>16</option>
+      <option>15</option>
+      <option>14</option>
+      <option>13</option>
+      <option>12</option>
+      <option>11</option>
+      <option>10</option>
+      <option>9</option>
+      <option>8</option>
+      <option>7</option>
+      <option>6</option>
+      <option>5</option>
+      <option>4</option>
+      <option>3</option>
+      <option>2</option>
+      <option>1</option>
+
+    </select></div>
+    <div class="column-half">SAT II combined score<select class="form-control" name="satTwo" id="satTwo" ng-model="vm.user.satTwo", required >
+      <option>--Select--</option>
+      <option>1600</option>
+      <option>1590</option>
+      <option>1580</option>
+      <option>1570</option>
+      <option>1560</option>
+      <option>1550</option>
+      <option>1540</option>
+      <option>1530</option>
+      <option>1520</option>
+      <option>1510</option>
+      <option>1500</option>
+      <option>1490</option>
+      <option>1480</option>
+      <option>1470</option>
+      <option>1460</option>
+      <option>1450</option>
+      <option>1440</option>
+      <option>1430</option>
+      <option>1420</option>
+      <option>1410</option>
+      <option>1400</option>
+      <option>1390</option>
+      <option>1380</option>
+      <option>1370</option>
+      <option>1360</option>
+      <option>1350</option>
+      <option>1340</option>
+      <option>1330</option>
+      <option>1320</option>
+      <option>1310</option>
+      <option>1300</option>
+      <option>1290</option>
+      <option>1280</option>
+      <option>1270</option>
+      <option>1260</option>
+      <option>1250</option>
+      <option>1240</option>
+      <option>1230</option>
+      <option>1220</option>
+      <option>1210</option>
+      <option>1200</option>
+      <option>1190</option>
+      <option>1180</option>
+      <option>1170</option>
+      <option>1160</option>
+      <option>1150</option>
+      <option>1140</option>
+      <option>1130</option>
+      <option>1120</option>
+      <option>1110</option>
+      <option>1100</option>
+      <option>1090</option>
+      <option>1080</option>
+      <option>1070</option>
+      <option>1060</option>
+      <option>1050</option>
+      <option>1040</option>
+      <option>1030</option>
+      <option>1020</option>
+      <option>1010</option>
+      <option>1000</option>
+      <option>990</option>
+      <option>980</option>
+      <option>970</option>
+      <option>960</option>
+      <option>950</option>
+      <option>940</option>
+      <option>930</option>
+      <option>920</option>
+      <option>910</option>
+      <option>900</option>
+      <option>890</option>
+      <option>880</option>
+      <option>870</option>
+      <option>860</option>
+      <option>850</option>
+      <option>840</option>
+      <option>830</option>
+      <option>820</option>
+      <option>810</option>
+      <option>800</option>
+      <option>790</option>
+      <option>780</option>
+      <option>770</option>
+      <option>760</option>
+      <option>750</option>
+      <option>740</option>
+      <option>730</option>
+      <option>720</option>
+      <option>710</option>
+      <option>700</option>
+      <option>690</option>
+      <option>680</option>
+      <option>670</option>
+      <option>660</option>
+      <option>650</option>
+      <option>640</option>
+      <option>630</option>
+      <option>620</option>
+      <option>610</option>
+      <option>600</option>
+      <option>590</option>
+      <option>580</option>
+      <option>570</option>
+      <option>560</option>
+      <option>550</option>
+      <option>540</option>
+      <option>530</option>
+      <option>520</option>
+      <option>510</option>
+      <option>500</option>
+      <option>490</option>
+      <option>480</option>
+      <option>470</option>
+      <option>460</option>
+      <option>450</option>
+      <option>440</option>
+      <option>430</option>
+      <option>420</option>
+      <option>410</option>
+      <option>400</option>
+    </select></div>
+    </div>
+
+    <div class="form-row">
+    <div class="column-half"> Rank (percentile) <select class="form-control" name="rank" id="rank" ng-model="vm.user.rank", required >
+      <option>--Select--</option>
+      <option>1-2%</option>
+      <option>2-5%</option>
+      <option>5-10%</option>
+      <option>10-15%</option>
+      <option>15-20%</option>
+      <option>20-25%</option>
+      <option>25-30%</option>
+      <option>30-35%</option>
+      <option>35-40%</option>
+      <option>40-45%</option>
+      <option>45-50%</option>
+      <option>50-55%</option>
+      <option>55-60%</option>
+      <option>60-65%</option>
+      <option>65-70%</option>
+      <option>70-75%</option>
+      <option>75-80%</option>
+      <option>80-85%</option>
+      <option>85-90%</option>
+      <option>90-95%</option>
+      <option>95-100%</option>
+    </select></div>
+    <div class="column-half">Unweighted GPA<select class="form-control" name="gpa" id="gpa" ng-model="vm.user.gpa" ,required >
+      <option>--Select--</option>
+      <option>4.0</option>
+      <option>3.95 - 3.99</option>
+      <option>3.90 - 3.94</option>
+      <option>3.85 - 3.89</option>
+      <option>3.80 - 3.84</option>
+      <option>3.75 - 3.79</option>
+      <option>3.70 - 3.74</option>
+      <option>3.65 - 3.69</option>
+      <option>3.60 - 3.64</option>
+      <option>3.55 - 3.59</option>
+      <option>3.50 - 3.54</option>
+      <option>3.45 - 3.49</option>
+      <option>3.40 - 3.44</option>
+      <option>3.35 - 3.39</option>
+      <option>3.30 - 3.34</option>
+      <option>3.25 - 3.29</option>
+      <option>3.20 - 3.24</option>
+      <option>3.15 - 3.19</option>
+      <option>3.10 - 3.14</option>
+      <option>3.05 - 3.09</option>
+      <option>3.00 - 3.04</option>
+      <option>2.95 - 2.99</option>
+      <option>2.90 - 2.94</option>
+      <option>2.85 - 2.89</option>
+      <option>2.80 - 2.84</option>
+      <option>2.75 - 2.79</option>
+      <option>2.70 - 2.74</option>
+      <option>2.65 - 2.69</option>
+      <option>2.60 - 2.64</option>
+      <option>2.55 - 2.59</option>
+      <option>2.50 - 2.54</option>
+      <option>2.45 - 2.49</option>
+      <option>2.40 - 2.44</option>
+      <option>2.35 - 2.39</option>
+      <option>2.30 - 2.34</option>
+      <option>2.25 - 2.29</option>
+      <option>2.20 - 2.24</option>
+      <option>2.15 - 2.19</option>
+      <option>2.10 - 2.14</option>
+      <option>2.05 - 2.09</option>
+      <option>2.00 - 2.04</option>
+      <option>1.95 - 1.99</option>
+      <option>1.90 - 1.94</option>
+      <option>1.85 - 1.89</option>
+      <option>1.80 - 1.84</option>
+      <option>1.75 - 1.79</option>
+      <option>1.70 - 1.74</option>
+      <option>1.65 - 1.69</option>
+      <option>1.60 - 1.64</option>
+      <option>1.55 - 1.59</option>
+      <option>1.50 - 1.54</option>
+      <option>1.45 - 1.49</option>
+      <option>1.40 - 1.44</option>
+      <option>1.35 - 1.39</option>
+      <option>1.30 - 1.34</option>
+      <option>1.25 - 1.29</option>
+      <option>1.20 - 1.24</option>
+      <option>1.15 - 1.19</option>
+      <option>1.10 - 1.14</option>
+      <option>1.05 - 1.09</option>
+      <option>1.00 - 1.04</option>
+
+    </select></div>
+    </div>
+
+    <div class="form-row">
+    <div class="column-half">Sporting Ability<select class="form-control" name="sport" id="sport" ng-model="vm.user.sport", required >
+      <option>--Select--</option>
+      <option>Varsity</option>
+      <option>Junior Varsity</option>
+      <option>Intramural</option>
+      <option>None</option>
+
+    </select></div>
+    <div class="column-half">Legacy?<select class="form-control" name="legacy" id="legacy" ng-model="vm.user.legacy", required >
+      <option>--Select--</option>
+      <option>Yes</option>
+      <option>No</option>
+    </select></div>
+    </div>
+
+    <div class="form-row">
+    <div class="column-half">First Generation? <select class="form-control" name="firstGen" id="firstGen" ng-model="vm.user.firstGen", required >
+      <option>--Select--</option>
+      <option>Yes</option>
+      <option>No</option>
+    </select></div>
+    <div class="column-half">How Well Did Interview Go?<select class="form-control" name="interview" id="interview" ng-model="vm.user.interview", required>
+      <option>--Select--</option>
+      <option>10</option>
+      <option>9</option>
+      <option>8</option>
+      <option>7</option>
+      <option>6</option>
+      <option>5</option>
+      <option>4</option>
+      <option>3</option>
+      <option>2</option>
+      <option>1</option>
+    </select></div>
+    </div>
+
+    <div class="form-row">
+    <div class="column-half">Strength Of Course Load<select class="form-control" name="course" id="course" ng-model="vm.user.course",required >
+      <option>--Select--</option>
+      <option>10</option>
+      <option>9</option>
+      <option>8</option>
+      <option>7</option>
+      <option>6</option>
+      <option>5</option>
+      <option>4</option>
+      <option>3</option>
+      <option>2</option>
+      <option>1</option>
+    </select></div>
+    <div class="column-half">Strength Of Essays<select class="form-control" name="essay" id="essay" ng-model="vm.user.essay", required>
+      <option>--Select--</option>
+      <option>10</option>
+      <option>9</option>
+      <option>8</option>
+      <option>7</option>
+      <option>6</option>
+      <option>5</option>
+      <option>4</option>
+      <option>3</option>
+      <option>2</option>
+      <option>1</option>
+    </select></div>
+    </div>
+
+    <div class="form-row">
+    <div class="column-half">Strength Of Letters Of Recommendation<select class="form-control" id="recommendation" ng-model="vm.user.recommendation", required>
+      <option>--Select--</option>
+      <option>10</option>
+      <option>9</option>
+      <option>8</option>
+      <option>7</option>
+      <option>6</option>
+      <option>5</option>
+      <option>4</option>
+      <option>3</option>
+      <option>2</option>
+      <option>1</option>
+    </select></div>
+    <div class="column-half">Strength Of Extracurricular Activities<select class="form-control" name="extra" id="extra" ng-model="vm.user.extra", required>
+      <option>--Select--</option>
+      <option>10</option>
+      <option>9</option>
+      <option>8</option>
+      <option>7</option>
+      <option>6</option>
+      <option>5</option>
+      <option>4</option>
+      <option>3</option>
+      <option>2</option>
+      <option>1</option>
+    </select></div>
+    </div>
+
+
+
+    <div class="form-row">
+    <div class="hcenter"><button class="btn btn-success" type="submit" value="submit" id="sbtbtn">Submit</button></div>
+    </div>
+
+    </div>
+</form>
