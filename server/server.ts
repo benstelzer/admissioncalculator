@@ -7,7 +7,7 @@ import config =  require('./config/config');
 //Global vars
 
 const PORT = process.env.PORT || 3000;
-const MONGO_URL = "mongodb://localhost/college-manager";
+const MONGO_URL = process.env.MONGO_URL || "mongodb://localhost/college-manager";
 let app = express();
 
 // Mongoose connection
@@ -69,6 +69,6 @@ app.use((err: any, req, res, next) => {
   res.status(err.status || 500).send(err);
 })
 
-app.listen(3000, () => {
+app.listen(PORT, () => {
   console.log('Server is listening on localhost:3000');
 });
