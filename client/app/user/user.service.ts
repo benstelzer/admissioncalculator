@@ -16,9 +16,10 @@ namespace app {
 
 
     public create(user:IUser) {
-        return this.UserResource.save(user).$promise; }
+        return this.UserResource.save(user).$promise;
+       }
 
-        public getOne(id) {
+    public getOne(id) {
           return this.UserResource.get({ id: id });
       }
 

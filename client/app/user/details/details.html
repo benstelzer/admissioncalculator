@@ -1,16 +1,15 @@
 <link rel="stylesheet" href="http://bootswatch.com/spacelab/bootstrap.min.css">
 <link rel="stylesheet" href="/client/app/user/details/details.css">
 <br>
-<div ng-repeat="p in vm.users">
-  <div class="well container hcenter widthy" ng-show="$last" style="text-align: center">
+
+  <div class="well container hcenter widthy"  style="text-align: center">
     <div>
-      <img ng-src="{{p.schoolUrl}}" style="height:100px; width: 100px;"/>
+      <img ng-src="{{vm.user.schoolUrl}}" style="height:100px; width: 100px;"/>
     </div>
     <br>
-    <div>You have a {{p.scoreSum}}% chance of gaining admission to {{p.school}}.
+    <div>You have a {{vm.user.scoreSum}}% chance of gaining admission to {{vm.user.school}}.
     </div>
     <br>
     <div>
       <button class="btn btn-success" ui-sref="main()"> Try Again! </button>
   </div>
-</div>

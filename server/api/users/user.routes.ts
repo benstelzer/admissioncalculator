@@ -20,7 +20,7 @@ router.get('/',auth, controller.getAll);
 // GET: /api/v1/user/:id
 // :id -> unique id of userSubmission
 
-router.get('/:id',auth, controller.getOne);
+router.get('/:id', controller.getOne);
 
 // POST: /api/v1/users/
 

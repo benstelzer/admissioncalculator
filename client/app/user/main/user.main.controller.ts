@@ -4,6 +4,8 @@ namespace app {
     public users: IUser[];
 
 
+
+
     public create() {
       // logic for sat/act validation
 
@@ -13,8 +15,8 @@ namespace app {
         if (prop !== 'satOld' && prop !== 'act' &&  prop !== 'satNew')
          if (this.user[prop] === "--Select--" || !this.user[prop]) return;
       }
-  this.UserService.create(<IUser>this.user).then (() => {
-    this.$state.go("details");
+  this.UserService.create(<IUser>this.user).then ((res) => {
+    this.$state.go("details", {id: res._id});
   } );
 }
 
@@ -30,6 +32,9 @@ public update () {
       private $stateParams: ng.ui.IStateParamsService) {
         this.user['school'] = this.user['satOld'] = this.user['satNew'] = this.user['act'] = this.user['rank'] = this.user['gpa'] = this.user['sport'] = this.user['legacy'] = this.user['satTwo'] = this.user['firstGen'] =this.user['extra'] =this.user['recommendation']=this.user['interview']=this.user['essay']=this.user['course']= "--Select--";
 this.users = UserService.getAll();
+
+
+
 
     }
   }
