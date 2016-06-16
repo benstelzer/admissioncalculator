@@ -1,6 +1,6 @@
 namespace app {
   export class UserMainController {
-    public user: IUser = {};
+    public user: IUser
     public users: IUser[];
 
 
@@ -9,7 +9,7 @@ namespace app {
 
 
       if (this.user.satOld === "--Select--" && this.user.satNew === "--Select--" && this.user.act === "--Select--" ) return;
-      
+
       for(var prop in this.user) {
         if (prop !== 'satOld' && prop !== 'act' &&  prop !== 'satNew')
          if (this.user[prop] === "--Select--" || !this.user[prop]) return;

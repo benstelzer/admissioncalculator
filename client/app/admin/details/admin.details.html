@@ -3,7 +3,6 @@
 <ul class ="hcenter well container" style="list-style: none" ng-show="!vm.isEditing">
 
 
-  <li> id: {{vm.user._id}} </li>
   <li> School: {{vm.user.school}}</li>
   <li> Sat Old: {{vm.user.satOld}}</li>
   <li> Sat New {{vm.user.satNew}}</li>
@@ -12,9 +11,7 @@
   <li> Admit Rate: {{vm.user.scoreSum}}%</li>
 </ul>
 <form class=" well container" ng-show="vm.isEditing" ng-submit="vm.update()">
-  <label> id: </label>
-  <input class="form-control" ng-model="vm.updateUser._id">
-  <br>
+  
   <label> School: </label>
   <input class="form-control" ng-model="vm.updateUser.school">
   <br>
