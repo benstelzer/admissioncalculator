@@ -44,7 +44,7 @@ adminSchema.method("createJWT", function () {
     _id: this._id,
     email: this.email,
     isUser: this.isUser
-  }, "apple")
+  }, process.env.JWT_SECRET)
 
 });
 

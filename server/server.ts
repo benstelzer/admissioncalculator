@@ -1,3 +1,5 @@
+require("dotenv").config({silent: true});
+
 import * as mongoose from "mongoose";
 import * as express from 'express';
 import config =  require('./config/config');
