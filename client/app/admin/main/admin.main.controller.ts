@@ -84,6 +84,8 @@ this.users = AdminService.getAll();
 
 this.permission = AdminService.status;
 
+console.log(this.status);
+
 
 }
 

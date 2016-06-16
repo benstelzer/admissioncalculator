@@ -38,7 +38,6 @@ public update () {
 
 
 
-
     }
   }
 angular.module("app").controller("AdminDetailsController", AdminDetailsController)
