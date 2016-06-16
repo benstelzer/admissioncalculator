@@ -11,12 +11,13 @@ export class AdminMainController {
 
 
 
-    public drawChart(){this.myChartObject.type = "BarChart";
+
+    public drawChart(){this.myChartObject["type"] = "BarChart";
 
 
 
 
-    this.myChartObject.options = {
+    this.myChartObject["options"] = {
         'title': 'Average College Admit Rate from Submitted Data'
     };};
 
@@ -58,7 +59,7 @@ console.log(this.permission.isUser);
                   {v: data[2].scoreAvg},
               ]}]
 
-              this.myChartObject.data ={"cols": columns, "rows": rows}
+              this.myChartObject["data"] ={"cols": columns, "rows": rows}
 
         }, (err) => {
           alert(err);
