@@ -81,7 +81,7 @@ let school =["Stanford", "Harvard", "Yale"];
 
 let schoolUrl = ["http://vignette2.wikia.nocookie.net/collegefootballmania/images/c/c2/Stanford_plain_block_%22S%22_logo.png/revision/latest?cb=20120928150306", "https://upload.wikimedia.org/wikipedia/en/thumb/3/3a/Harvard_Wreath_Logo_1.svg/1051px-Harvard_Wreath_Logo_1.svg.png", "http://www.zanda.com/resources/item/24010530000058/1024x768/Yale_University_logo.jpg"]
 
-let schoolMultiplier = [0.48, 0.49, 0.5];
+let schoolMultiplier = [0.30, 0.32, 0.33];
 
 
 
