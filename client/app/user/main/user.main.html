@@ -1,9 +1,12 @@
 <link rel="stylesheet" href="http://bootswatch.com/spacelab/bootstrap.min.css">
 <link rel="stylesheet" href="/client/app/user/main/user.main.css">
-<div class="well" style="min-height: 60px;">
-  </div>
-  <br>
 
+
+  <div class="well hcenter" style=" width: 90%; margin: auto;">
+    <span> <b>Submit your college credentials and see your predicted rate of admission! No Email or personal information required. </b></span>
+
+    </div>
+    <br>
 
 <form class="well container widthy" ng-submit="vm.create()">
    <div id="responsive-form" class="clearfix">
@@ -20,6 +23,7 @@
     <div class="form-row">
     <div class="column-half">SAT I (Old)<select class="form-control" name="satOld" id="satOld" ng-model="vm.user.satOld" required>
       <option>--Select--</option>
+      <option>Did not take</option>
       <option>2400</option>
       <option>2390</option>
       <option>2380</option>
@@ -204,6 +208,7 @@
     </select> </div>
     <div class="column-half">SAT I (New)<select class="form-control" name="satNew" id="satNew" ng-model="vm.user.satNew", required >
       <option>--Select--</option>
+      <option>Did not take</option>
       <option>1600</option>
       <option>1590</option>
       <option>1580</option>
@@ -331,6 +336,7 @@
     <div class="form-row">
     <div class="column-half">ACT Composite<select class="form-control" name="act" id="act" ng-model="vm.user.act", required>
       <option>--Select--</option>
+      <option>Did not take</option>
       <option>36</option>
       <option>35</option>
       <option>34</option>
@@ -371,6 +377,7 @@
     </select></div>
     <div class="column-half">SAT II combined score<select class="form-control" name="satTwo" id="satTwo" ng-model="vm.user.satTwo", required >
       <option>--Select--</option>
+      <option>Did not take</option>
       <option>1600</option>
       <option>1590</option>
       <option>1580</option>
