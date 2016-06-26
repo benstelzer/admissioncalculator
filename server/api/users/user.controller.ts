@@ -77,11 +77,11 @@ let sport = ["Varsity", "Junior Varsity", "Intramural", "None"];
 
 let sportScore = [10,6,4,0];
 
-let school =["Stanford", "Harvard", "Yale"];
+let school =["Stanford", "Harvard", "Yale", "Brown", "Columbia", "Cornell", "Dartmouth", "Penn", "Princeton"];
 
-let schoolUrl = ["http://vignette2.wikia.nocookie.net/collegefootballmania/images/c/c2/Stanford_plain_block_%22S%22_logo.png/revision/latest?cb=20120928150306", "https://upload.wikimedia.org/wikipedia/en/thumb/3/3a/Harvard_Wreath_Logo_1.svg/1051px-Harvard_Wreath_Logo_1.svg.png", "http://www.zanda.com/resources/item/24010530000058/1024x768/Yale_University_logo.jpg"]
+let schoolUrl = ["http://vignette2.wikia.nocookie.net/collegefootballmania/images/c/c2/Stanford_plain_block_%22S%22_logo.png/revision/latest?cb=20120928150306", "https://upload.wikimedia.org/wikipedia/en/thumb/3/3a/Harvard_Wreath_Logo_1.svg/1051px-Harvard_Wreath_Logo_1.svg.png", "http://www.zanda.com/resources/item/24010530000058/1024x768/Yale_University_logo.jpg", "https://pbs.twimg.com/profile_images/443750757771132928/NSmiJugu.png", "http://www.freelogovectors.net/wp-content/uploads/2014/01/Columbia_University_Seal1.jpg", "https://publicgardens.org/sites/default/files/styles/full_width/public/field/image/cornell%20logo%203.gif?itok=B9F1cq1d","http://www.logodekho.com/wp-content/uploads/2015/05/Dartmouth-College-Logo.jpg", "http://www.seas.upenn.edu/~mega/images/penn.gif", "https://www.princeton.edu/~oktour/virtualtour/korean/Images/Small/Shield.gif"]
 
-let schoolMultiplier = [0.30, 0.32, 0.33];
+let schoolMultiplier = [0.24, 0.24, 0.26, 0.36, 0.25, 0.50, 0.39, 0.38, 0.25];
 
 
 
