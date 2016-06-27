@@ -1,6 +1,9 @@
 #responsive-form{
 	max-width:100%; /*-- change this to get your desired form width --*/;
-	margin:0 auto;
+	margin:0
+	auto;
+
+
         width:100%;
 }
 
@@ -17,6 +20,7 @@
 .widthy {
   max-width: 52%;
 }
+
 .form-row{
 	width: 100%;
 }
@@ -36,7 +40,7 @@
 }
 
 /**---------------- Media query ----------------**/
-@media only screen and (min-width: 48em) {
+@media only screen and (min-width: 62em) {
 	.column-half{
 		width: 50%;
 	}
